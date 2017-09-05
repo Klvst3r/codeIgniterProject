@@ -6,7 +6,10 @@ class Lista extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('view_list_contactos');
+		$data['nombre'] = 'Klvst3r';
+		$data['nombre2'] = 'Kozlov';
+
+		$this->load->view('view_list_contactos',$data);
 	}
 }
 
